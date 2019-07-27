@@ -1,0 +1,4 @@
+github.com/ernst01/common v0.0.0-20190727172920-3b3f25ed320b h1:xcqgUKSrBfgfcWUlLG+NgDEpJjIUPd22z8QxFdMYOFQ=
+github.com/ernst01/common v0.0.0-20190727172920-3b3f25ed320b/go.mod h1:3Fx/5+73p17RXxxvkYxLiuPFgbVHRmpXeeTzrzXmyq0=
+github.com/gorilla/mux v1.7.3 h1:gnP5JzjVOuiZD07fKKToCAOjS0yOpj/qPETTXCCS6hw=
+github.com/gorilla/mux v1.7.3/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2zaAs=
