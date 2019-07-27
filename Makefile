@@ -1,18 +1,44 @@
 # Go parameters
+PROJECTNAME=$(shell basename "$(PWD)")
+ENTRYFILE="cmd/$(PROJECTNAME)/$(PROJECTNAME).go"
+
 GOCMD=go
 
-.SILENT:
+MAKEFLAGS += --silent
+
+## run: Runs your application
+run:
+	@echo " > Running..."
+	$(GOCMD) run $(ENTRYFILE)
+
+## install: Installs your dependencies
 install:
-		$(GOCMD) mod vendor
+	@echo " > Installing dependencies in vendor/"
+	$(GOCMD) mod vendor
+	@echo " > Done."
 
-local:
-		$(GOCMD) run cmd/apiname/apiname.go
-
+## build: Builds your application
 build:
-		$(GOCMD) build cmd/apiname/apiname.go
+	@echo " > Building..."
+	$(GOCMD) build -a -ldflags '-extldflags "-static"' $(ENTRYFILE)
+	@echo " > Done."
 
+## test: Runs your tests if any
 test:
-		$(GOCMD) test ./... -cover -v -coverprofile=coverage.out
+	@echo " > Running tests..."
+	$(GOCMD) test ./... -cover -v -coverprofile=coverage.out
+	@echo " > Done."
 
+## cover: Checks your code coverage
 cover:
-		$(GOCMD) tool cover -html=coverage.out
+	@echo " > Checking coverage..."
+	$(GOCMD) tool cover -html=coverage.out
+
+.PHONY: help
+all: help
+help: Makefile
+	@echo
+	@echo "Choose a command to run in "$(PROJECTNAME)":"
+	@echo
+	sed -n 's/^##//p' $< | column -t -s ':' | sed -e 's/^/ /'
+	@echo
