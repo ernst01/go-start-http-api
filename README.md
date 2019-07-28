@@ -12,7 +12,7 @@ When I first started looking into creating cleaner HTTP services I stumbled upon
 
 ## Dockerfile
 
-The Dockerfile has 3 steps: The first one builds your application, the second one is meant for testing, and the final step produces a small image from `scratch`. As best practice the final image runs a non-root.  
+The Dockerfile has 3 steps: The first one builds your application, the second one is meant for testing, and the final step produces a small image from `scratch`. As best practice the final image runs as non-root.  
 
 ## Makefile
 
