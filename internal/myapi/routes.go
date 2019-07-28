@@ -1,4 +1,4 @@
-package apiname
+package myapi
 
 import (
 	"net/http"
@@ -6,8 +6,8 @@ import (
 
 // Routes defines all our routes
 func (s *Server) Routes() {
-	s.Router.Path("/apiname").Methods("GET").
-		HandlerFunc(corsHandler(s.handleReadApiname()))
+	s.Router.Path("/myapi").Methods("GET").
+		HandlerFunc(corsHandler(s.handleReadMyAPI()))
 }
 
 func corsHandler(h http.Handler) http.HandlerFunc {

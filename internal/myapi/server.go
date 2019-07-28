@@ -1,4 +1,4 @@
-package apiname
+package myapi
 
 import (
 	"github.com/gorilla/mux"

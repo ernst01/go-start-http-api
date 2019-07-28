@@ -1,4 +1,4 @@
-package apiname
+package myapi
 
 import (
 	"math/rand"
@@ -9,13 +9,13 @@ import (
 
 const rmax = 100000
 
-func (s *Server) handleReadApiname() http.HandlerFunc {
-	type APINameResponse struct {
+func (s *Server) handleReadMyAPI() http.HandlerFunc {
+	type MyAPIResponse struct {
 		ID      int    `json:"id"`
 		Message string `json:"message"`
 	}
 	return func(w http.ResponseWriter, r *http.Request) {
-		resp := &APINameResponse{
+		resp := &MyAPIResponse{
 			ID:      rand.Intn(rmax),
 			Message: "Well done Sparky!",
 		}

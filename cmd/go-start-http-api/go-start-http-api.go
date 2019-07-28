@@ -4,12 +4,12 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/ernst01/go-start-http-api/internal/apiname"
+	"github.com/ernst01/go-start-http-api/internal/myapi"
 	"github.com/gorilla/mux"
 )
 
 func main() {
-	srv := apiname.Server{
+	srv := myapi.Server{
 		Router: mux.NewRouter(),
 	}
 
