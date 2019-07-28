@@ -1,4 +1,4 @@
-package myapi
+package server
 
 import (
 	"math/rand"
