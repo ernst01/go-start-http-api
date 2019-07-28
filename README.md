@@ -10,6 +10,10 @@ This project follows the Standard Go Project layout from [golang-standards/proje
 
 When I first started looking into creating cleaner HTTP services I stumbled upon Mat Ryer's [How I write Go HTTP services after seven years](https://medium.com/statuscode/how-i-write-go-http-services-after-seven-years-37c208122831). I found his blog post inspiring and decided the emulate most of his recommendations.
 
+## Dockerfile
+
+The Dockerfile has 3 steps: The first one builds your application, the second one is meant for testing, and the final step produces a small image from `scratch`. As best practice the final image runs a non-root.  
+
 ## Makefile
 
 A Makefile contains a set of directives that helps developers use and understand your application. 
