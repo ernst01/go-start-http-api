@@ -9,7 +9,7 @@ MAKEFLAGS += --silent
 ## run: Runs your application
 run:
 	@echo " > Running..."
-	$(GOCMD) run $(ENTRYFILE)
+	$(GOCMD) run -mod=vendor $(ENTRYFILE)
 
 ## install: Installs your dependencies
 install:

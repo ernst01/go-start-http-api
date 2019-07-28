@@ -21,9 +21,9 @@ func (s *Server) handleReadMyAPI() http.HandlerFunc {
 		}
 
 		if resp.ID > (rmax / 2) {
-			response.SendError(w, http.StatusInternalServerError, "Something went wrong")
+			response.SendJSONError(w, http.StatusInternalServerError, "http://example.com/helper_url", "Something went wrong: %d is greater than %d", resp.ID, rmax/2)
 		} else {
-			response.SendSuccess(w, http.StatusOK, resp)
+			response.SendJSONSuccess(w, http.StatusOK, resp)
 		}
 	}
 }
