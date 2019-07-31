@@ -35,9 +35,8 @@ Choose a command to run in go-start-http-api:
 
 ## HTTP Responses
 
-I wrote a simple package to help with sending error and success responses. [Ckeck it out!](https://github.com/ernst01/common/tree/master/pkg/response)
+I wrote a simple package to help with sending JSON error and success responses. [Ckeck it out!](https://github.com/ernst01/common/tree/master/pkg/response)
 
 ## Feedback
 
-I've been using a similar code structure for the past 2 years and wanted to share it with the community. Feedback is more than welcome :) Feel free to create Github Issues and Pull requests as you see fit.
-
+I've been using a similar code structure for the past ~2 years and wanted to share it with the community. Feedback is more than welcome :) Feel free to create Github Issues and Pull requests as you see fit.
