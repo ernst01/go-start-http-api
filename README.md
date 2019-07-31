@@ -1,4 +1,5 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/ernst01/go-start-http-api)](https://goreportcard.com/report/github.com/ernst01/go-start-http-api)
+[![codecov](https://codecov.io/gh/ernst01/go-start-http-api/branch/master/graph/badge.svg)](https://codecov.io/gh/ernst01/go-start-http-api)
 
 # go-start-http-api
 
