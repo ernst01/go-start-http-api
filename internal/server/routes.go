@@ -8,6 +8,8 @@ import (
 func (s *Server) Routes() {
 	s.Router.Path("/myapi").Methods("GET", "OPTIONS").
 		HandlerFunc(corsHandler(s.handleReadMyAPI()))
+	s.Router.Path("/error").Methods("GET", "OPTIONS").
+		HandlerFunc(corsHandler(s.handleReadError()))
 }
 
 func corsHandler(h http.Handler) http.HandlerFunc {
