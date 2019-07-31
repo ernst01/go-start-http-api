@@ -1,3 +1,5 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/ernst01/go-start-http-api)](https://goreportcard.com/report/github.com/ernst01/go-start-http-api)
+
 # go-start-http-api
 
 Boilerplates for getting started with an HTTP Service/API in Go.
