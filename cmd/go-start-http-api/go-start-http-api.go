@@ -61,6 +61,7 @@ func main() {
 	glog.Infof("Starting to listen on port: %v.", prm.port)
 	if err := srv.ListenAndServe(); err != http.ErrServerClosed {
 		glog.Errorf("HTTP Server ListenAndServe() error: %v", err)
+		os.Exit(1)
 	}
 
 	glog.Info("Shutting down.")
