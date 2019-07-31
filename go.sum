@@ -1,4 +1,6 @@
 github.com/ernst01/common v0.0.0-20190728223912-6d900e01e636 h1:asG7usonuTiBJ9gsiQvJm9Y4ZVclukxjLU2r0JSzgiM=
 github.com/ernst01/common v0.0.0-20190728223912-6d900e01e636/go.mod h1:ry3k18xXVDGby0hU780laX8mPeulIdndQ0euJFZHEvs=
+github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b h1:VKtxabqXZkF25pY9ekfRL6a582T4P37/31XEstQ5p58=
+github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b/go.mod h1:SBH7ygxi8pfUlaOkMMuAQtPIUF8ecWP5IEl/CR7VP2Q=
 github.com/gorilla/mux v1.7.3 h1:gnP5JzjVOuiZD07fKKToCAOjS0yOpj/qPETTXCCS6hw=
 github.com/gorilla/mux v1.7.3/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2zaAs=

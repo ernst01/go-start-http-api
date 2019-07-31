@@ -1,4 +1,6 @@
 # github.com/ernst01/common v0.0.0-20190728223912-6d900e01e636
 github.com/ernst01/common/pkg/response
+# github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
+github.com/golang/glog
 # github.com/gorilla/mux v1.7.3
 github.com/gorilla/mux
